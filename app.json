@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home_page/home_page",
+    "pages/shop_cart/shop_cart",
+    "pages/mine/mine",
+    "pages/myinfo/index",
+    "pages/admin/index",
+    "pages/order/index",
+    "pages/details/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#67B8CB",
+    "navigationBarTitleText": "订书帮",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#67B8CB",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+      "pagePath": "pages/home_page/home_page",
+      "text": "首页",
+      "iconPath": "icons/首页.png",
+      "selectedIconPath": "icons/首页1.png"
+      },
+      {
+        "pagePath": "pages/shop_cart/shop_cart",
+        "text": "购物车",
+        "iconPath": "icons/购物车.png",
+        "selectedIconPath": "icons/购物车1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icons/我的.png",
+        "selectedIconPath": "icons/我的1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

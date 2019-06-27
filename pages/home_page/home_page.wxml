@@ -1,0 +1,25 @@
+<!--pages/home_page/home_page.wxml-->
+<!--
+<view class='list' style='display:flex; flex-direction:column'>
+  <view class='item' wx:for="{{listData}}" wx:key="{{index}}" style='display:flex; flex-direction:column' bindlongtap='delItem'>
+
+  <image class='img' src='{{item.img}}' />
+  <text class='name'>{{item.name}}</text>
+  <text class='price'>{{item.price}}</text>
+
+  </view>
+</view>
+-->
+
+<view id="stories-list" bindtap="goToStoryDetail">
+  <block wx:for="{{ storiesByDay }}" wx:key="{{ index }}" wx:for-item="stories">
+    <text id="stories-time">可选书目</text>
+    <view wx:for="{{ stories.stories }}" wx:key="{{ item.id }}" data-id="{{ item.id }}">
+      <navigator class="stories-list-item" url="/pages/details/index?id={{item._id}}">
+        <text data-id="{{ item.id }}" >{{ item.book_name }}</text>
+        <text data-id="{{ item.id }}" >单价：{{ item.book_price }}</text>
+        <image src="{{ item.img }}" data-id="{{ item.id }}"></image>
+      </navigator>
+    </view>
+  </block>
+</view>
